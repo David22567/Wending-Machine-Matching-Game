@@ -1,0 +1,145 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9205650398958103795
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8778463011428870423}
+  - component: {fileID: 5330906833421410685}
+  - component: {fileID: 3104530903083372812}
+  - component: {fileID: 8689234368915654712}
+  - component: {fileID: 9103063167859897551}
+  m_Layer: 0
+  m_Name: Game_Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8778463011428870423
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9205650398958103795}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.0075, y: 1.48703, z: -2.52071}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5330906833421410685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9205650398958103795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62a423a11b09437448b4efbfebb6be47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VendingMachineSpawner
+  surfaceSlots:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  depthOffset: 0.6
+  maxDepthGap: 2
+  itemPrefabs:
+  - itemType: 1
+    prefab: {fileID: 7854913798174276664, guid: 38c0bb15dcd0d00408c7842e1820742a, type: 3}
+  - itemType: 2
+    prefab: {fileID: 915654263112909968, guid: f0e3910a69ee0254490a1438f044302f, type: 3}
+  - itemType: 3
+    prefab: {fileID: 4134747307513873077, guid: d0e7c178405852447a5d6d0467e851bb, type: 3}
+  - itemType: 4
+    prefab: {fileID: 623719314307949167, guid: b59a96084434edc4a9b552d4614815a9, type: 3}
+  - itemType: 5
+    prefab: {fileID: -7512294778242959003, guid: 95ddfdded2644df449a8a39e044b60bf, type: 3}
+  - itemType: 6
+    prefab: {fileID: 2949508085612050251, guid: 35a0644304900b14b807267fdd70c16e, type: 3}
+  - itemType: 8
+    prefab: {fileID: -1060205133730069389, guid: 14cca57dafcf47a45840d02b599bab48, type: 3}
+  - itemType: 9
+    prefab: {fileID: 7424286127079477441, guid: b1cb9a68063e9cf4dbf1d1deb06be573, type: 3}
+  - itemType: 10
+    prefab: {fileID: 6226856860767457012, guid: 004df2372460aed4b83169ca7907d500, type: 3}
+  - itemType: 11
+    prefab: {fileID: 5692902077405636589, guid: d33982983a72de6489d4e3983b6584b5, type: 3}
+--- !u!114 &3104530903083372812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9205650398958103795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2533587266f1344189e351d11006548, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VendingRack
+  rackSlots:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  rackRotationSpeed: 120
+  rackScaleMultiplier: 0.5
+--- !u!114 &8689234368915654712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9205650398958103795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b3dcfc47dd2ca24a8a6447c1162b780, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameStateManager
+  gameDurationSeconds: 300
+  comboResetTime: 10
+--- !u!114 &9103063167859897551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9205650398958103795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6adb01bd7e595f845b5f8a8d78ba44cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameUIManager
+  winPanel: {fileID: 0}
+  losePanel: {fileID: 0}
+  nextlevel: Level-2
+  scoreText: {fileID: 0}
+  scoreSlider: {fileID: 0}
+  maxScore: 30
+  comboText: {fileID: 0}
+  timerText: {fileID: 0}
+  stars:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
